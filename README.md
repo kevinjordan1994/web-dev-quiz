@@ -8,3 +8,8 @@ Each Question object receives:
 - An integer pointing to the correct index
 
 Feel free to come up with a question of your own and make a pull request!
+
+### ToDos and Issues
+- Add logic for choosing answers and checking for correct answer
+- Create UI
+- Add scoring system
