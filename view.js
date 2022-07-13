@@ -1,18 +1,18 @@
 `use strict`;
 
-const questionContainer = document.querySelector(`body`);
+const questionContainer = document.querySelector(`.app-container`);
 
 class View {
   constructor() {}
 
   generateQuestionHTML(question) {
-    return `<div class="question">
-    <h1>${question.question}</h1>
+    return `<div>
+    <h1 class="question">${question.question}</h1>
     <ol class="answers">
-      <li>${question.answers[0]}</li>
-      <li>${question.answers[1]}</li>
-      <li>${question.answers[2]}</li>
-      <li>${question.answers[3]}</li>
+      <li class="answer">${question.answers[0]}</li>
+      <li class="answer">${question.answers[1]}</li>
+      <li class="answer">${question.answers[2]}</li>
+      <li class="answer">${question.answers[3]}</li>
     </ol>
   </div>`;
   }
