@@ -10,6 +10,6 @@ Each Question object receives:
 Feel free to come up with a question of your own and make a pull request!
 
 ### ToDos and Issues
-- Add logic for choosing answers and checking for correct answer
-- Create UI
-- Add scoring system
+- Add more questions!
+- Refactor!
+- Improve UI!
