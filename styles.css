@@ -4,11 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --off-white: #eeeeee;
+  --wrong: #da1212;
+  --blue: #11468f;
+  --darker-blue: #041562;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--off-white);
+}
+
 .app-container {
-  margin: 12rem auto;
+  margin: 3% auto;
   max-width: 50%;
   text-align: center;
-  background-color: antiquewhite;
 }
 
 .question {
@@ -18,7 +29,6 @@
 .answers {
   padding: 5%;
   font-size: 2rem;
-  background-color: aqua;
   list-style: none;
 }
 
@@ -27,5 +37,12 @@
   padding: 8px;
   border-radius: 1rem;
   color: white;
-  background-color: blue;
+  background-color: var(--blue);
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background-color: var(--darker-blue);
+  transition: background-color 0.5s ease;
 }
