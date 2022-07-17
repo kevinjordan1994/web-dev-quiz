@@ -23,7 +23,7 @@ function checkAnswer(event) {
   }
   currentQuestion++;
   if (currentQuestion === questions.length) {
-    console.log(`Game Over. Score: ` + score);
+    view.renderGameOverScreen(score);
   } else {
     view.renderQuestion(questions[currentQuestion]);
   }

@@ -23,7 +23,7 @@ body {
 }
 
 .question {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--darker-blue);
 }
 
@@ -46,4 +46,11 @@ body {
 .answer:hover {
   background-color: var(--darker-blue);
   transition: background-color 0.5s ease;
+}
+
+.score {
+  font-size: 7rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--blue);
 }

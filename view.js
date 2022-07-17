@@ -17,6 +17,13 @@ class View {
   </div>`;
   }
 
+  generateGameOverHTML(score) {
+    return `<div class="question">
+      <h1>Final Score</h1>
+      <p class="score">${Math.max(0, Math.trunc(score))}%</p>
+    </div>`;
+  }
+
   renderQuestion(question) {
     this.clearHTML();
     questionContainer.insertAdjacentHTML(
@@ -31,6 +38,10 @@ class View {
 
   renderGameOverScreen(score) {
     this.clearHTML();
+    questionContainer.insertAdjacentHTML(
+      `afterbegin`,
+      this.generateGameOverHTML(score)
+    );
   }
 }
 
