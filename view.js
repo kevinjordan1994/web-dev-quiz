@@ -18,10 +18,19 @@ class View {
   }
 
   renderQuestion(question) {
+    this.clearHTML();
     questionContainer.insertAdjacentHTML(
       `afterbegin`,
       this.generateQuestionHTML(question)
     );
+  }
+
+  clearHTML() {
+    questionContainer.innerHTML = ``;
+  }
+
+  renderGameOverScreen(score) {
+    this.clearHTML();
   }
 }
 

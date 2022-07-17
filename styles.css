@@ -24,6 +24,7 @@ body {
 
 .question {
   font-size: 4rem;
+  color: var(--darker-blue);
 }
 
 .answers {
